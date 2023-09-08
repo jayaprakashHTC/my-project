@@ -6,8 +6,8 @@ const BannerCarousel = () => {
   return (
    <section>
     <Carousel 
-    slideInterval={100000000}
-    className="h-[650px] border-none relative rounded-lg"
+    slideInterval={5000}
+    className="border-none relative rounded-lg"
     >
         <div className="relative">
             <Image
