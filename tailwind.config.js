@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./node_modules/flowbite-react/**/*.js",
+    "./node_modules/tw-elements/dist/js/**/*.js",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    
   ],
   theme: {
     container: {
@@ -25,6 +28,9 @@ module.exports = {
     fontFamily: {
       sans: ['Caveat', 'cursive'],
       serif: ['Merriweather', 'serif'],
+    },
+    borderRadius:{
+      'lg':"0px",
     },
     screens: {
       'xsm':{ 'max': '640px'},
@@ -49,9 +55,15 @@ module.exports = {
       transitionProperty: {
         'height': 'height',
         'spacing': 'margin, padding',
+      },
+      transformOrigin:{
+        'top-left-1/3-3/4': '50% 20%',
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require("flowbite/plugin"),
+    require("tw-elements/dist/plugin.cjs")
+  ],
 }
 
