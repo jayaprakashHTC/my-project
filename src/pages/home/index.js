@@ -1,8 +1,11 @@
-import React from 'react'
+import BannerCarousel from '@/components/BannerCarousel'
+import React from 'react';
 
 const HomeIndex = () => {
   return (
-    <div>index</div>
+   <>
+      <BannerCarousel />
+   </>
   )
 }
 
