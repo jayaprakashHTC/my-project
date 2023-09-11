@@ -4,7 +4,7 @@ import banner1 from "../assets/images/banner1.jpg";
 import banner2 from "../assets/images/banner2.jpg";
 const BannerCarousel = () => {
   return (
-   <section>
+   <>
     <Carousel 
     slideInterval={5000}
     className="border-none relative rounded-lg"
@@ -27,7 +27,7 @@ const BannerCarousel = () => {
             />
         </div>
         </Carousel>
-   </section>
+   </>
   )
 }
 

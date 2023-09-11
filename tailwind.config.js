@@ -58,6 +58,9 @@ module.exports = {
       },
       transformOrigin:{
         'top-left-1/3-3/4': '50% 20%',
+      },
+      backgroundImage:{
+        'new-collection':'https://ap-lotita.myshopify.com/cdn/shop/files/h1-bg01.png?v=1660116182'
       }
     },
   },
