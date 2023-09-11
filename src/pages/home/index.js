@@ -21,7 +21,7 @@ const HomeIndex = () => {
          <div className='bg-[#f5f5f5] pt-[100px] pb-[100px]'>
             <div className='container'>
                <div className='grid grid-rows-1 grid-flow-col'>
-                  <div className='grid grid-cols-4 gap-16 xsm:gap-8 xsm:flex flex-col'>
+                  <div className='grid grid-cols-4 gap-16 xsm:gap-8 xsm:flex flex-col md:grid-cols-2'>
                   <div>
                       <div className='flex justify-center items-center'>
                           <PiVan className='text-[60px]'/>

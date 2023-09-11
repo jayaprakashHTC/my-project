@@ -14,35 +14,44 @@ const NewCollections = () => {
                 <div>
                     <p className="text-gray-400 text-[18px]">SPRING 2022</p>
                     <h2 className="text-[45px] xsm:text-[34px] mb-[20px] leading-[3rem] mt-[20px]">New Collection <br/> Ready to Wear</h2>
-                    <Image 
+                   <div className='w-full overflow-hidden touch-auto'>
+                   <Image 
                     src={image1} 
                     alt="New collection image not display" 
+                    className="w-full h-auto hover:scale-110 transition duration-700 ease-in-out cursor-pointer object-cover"
                     // fill
-                    style={{
-                        objectFit: 'cover', // cover, contain, none
-                        width: '100%',
-                        height: 'auto',
-                    }}
+                    // style={{
+                    //     objectFit: 'cover', // cover, contain, none
+                    //     width: '100%',
+                    //     height: 'auto',
+                    // }}
                     priority
                     />
+                   </div>
+                   <div className='w-full overflow-hidden touch-auto mt-[30px]'>
                     <Image 
                     src={image3} 
                     alt="New collection image not display" 
-                    className="mt-[30px] float-right object-cover w-[80%] h-auto xsm:w-[100%]"
+                    className="float-right w-[80%] xsm:w-[100%] h-auto hover:scale-110 transition duration-700 ease-in-out cursor-pointer object-cover"
+                    // className="mt-[30px] float-right object-cover w-[80%] h-auto xsm:w-[100%] hover:scale-110 transition duration-100 cursor-pointer"
+                    priority
+                    />
+                    </div>
+                </div>
+                <div>
+                <div className='w-full overflow-hidden touch-auto'>
+                   <Image 
+                    src={image2} 
+                    alt="New collection image not display" 
+                    className="w-full h-auto hover:scale-110 transition duration-700 ease-in-out cursor-pointer object-cover"
+                    // style={{
+                    //     objectFit: 'cover', // cover, contain, none
+                    //     width: '100%',
+                    //     height: 'auto',
+                    // }}
                     priority
                     />
                 </div>
-                <div>
-                <Image 
-                    src={image2} 
-                    alt="New collection image not display" 
-                    style={{
-                        objectFit: 'cover', // cover, contain, none
-                        width: '100%',
-                        height: 'auto',
-                    }}
-                    priority
-                    />
                     <Image 
                     src="https://cdn.shopify.com/s/files/1/1430/7398/files/f1.png?v=1668584485" 
                     alt="New collection image not display" 
