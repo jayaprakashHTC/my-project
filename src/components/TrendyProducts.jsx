@@ -10,10 +10,14 @@ import image5 from '../assets/images/product-2-1 (1).jpg';
 import image6 from '../assets/images/product-25-1.jpg';
 import image7 from '../assets/images/c07.jpg';
 import image8 from '../assets/images/o1.jpg';
+import image9 from '../assets/images/product-2-2.jpg';
 import Link from 'next/link';
 
 const TrendyProducts = () => {
     const [isShown, setIsShown] = useState(false);
+    const handlehovered = () =>{
+        setIsShown(!isShown);
+    }
   return (
     <div className="mt-[80px]">
         {/* <div className="container">
@@ -27,12 +31,13 @@ const TrendyProducts = () => {
             </div>
         </div> */}
         <div className="container">
-            <div className="grid grid-rows-1 grid-flow-col">
+            {/* <div className="grid grid-rows-1 grid-flow-col">
                 <div className="grid grid-cols-1">
-                    <h2 className="text-center text-[40px] text-gray-dark">Trendy Products</h2>
+                    
                 </div>
-               
-            </div>
+                
+            </div> */}
+            <h2 className="text-center text-[40px] text-gray-dark">Trendy Products</h2>
                     <Tabs.Group
                         // aria-label="Tabs with underline"
                         style="underline"
@@ -89,18 +94,21 @@ const TrendyProducts = () => {
                                         </figcaption>
                                         </figure>
                                     </div>
-                                    <div>
-                                        <figure class="relative transition-all duration-300 cursor-pointer filter grayscale-0 hover:grayscale-0">
+                                    <div
+                                    onMouseEnter={handlehovered}
+                                    onMouseLeave={handlehovered}
+                                    >
+                                        <figure class="relative transition-all duration-300 cursor-pointer filter grayscale-0 hover:grayscale-0 w-full overflow-hidden touch-auto">
                                         <Link href="#">
                                             <Image 
-                                            class="rounded-lg" 
-                                            src={image2} 
+                                            class={isShown ? "rounded-lg w-full h-auto hover:scale-110 transition duration-700 ease-in-out cursor-pointer object-cover" : "rounded-lg w-[100%] h-auto object-cover"}
+                                            src={!isShown ? image9 : image2} 
                                             alt="image description" 
-                                            style={{
-                                                objectFit: 'cover', // cover, contain, none
-                                                width: '100%',
-                                                height: 'auto',
-                                            }}
+                                            // style={{
+                                            //     objectFit: 'cover', // cover, contain, none
+                                            //     width: '100%',
+                                            //     height: 'auto',
+                                            // }}
                                             priority
                                             />
                                         </Link>

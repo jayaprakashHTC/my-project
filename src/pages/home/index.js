@@ -6,6 +6,11 @@ import {MdOutlineSupportAgent} from 'react-icons/md';
 import {TbTruckReturn} from 'react-icons/tb';
 import {TfiGift} from 'react-icons/tfi';
 import TrendyProducts from '@/components/TrendyProducts';
+import EveryDayLook from '@/components/EveryDayLook';
+import NewArrivals from '@/components/NewArrivals';
+import LatestBlogs from '@/components/latestBlogs';
+import DiscountOffer from '@/components/DiscountOffer';
+import ImagesGallery from '@/components/ImagesGallery';
 
 const HomeIndex = () => {
   return (
@@ -65,6 +70,21 @@ const HomeIndex = () => {
       </section>
       <section>
          <TrendyProducts />
+      </section>
+      <section>
+        <EveryDayLook />
+      </section>
+      <section>
+        <NewArrivals />
+      </section>
+      <section>
+        <LatestBlogs />
+      </section>
+      <section>
+        <DiscountOffer />
+      </section>
+      <section>
+        <ImagesGallery />
       </section>
    </>
   )

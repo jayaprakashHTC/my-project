@@ -26,7 +26,7 @@ const BannerCarousel = () => {
                 className="border-none rounded-none"
             />
         </div>
-        </Carousel>
+    </Carousel>
    </>
   )
 }

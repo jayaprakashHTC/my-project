@@ -60,7 +60,8 @@ module.exports = {
         'top-left-1/3-3/4': '50% 20%',
       },
       backgroundImage:{
-        'new-collection':'https://ap-lotita.myshopify.com/cdn/shop/files/h1-bg01.png?v=1660116182'
+        'new-collection':'https://ap-lotita.myshopify.com/cdn/shop/files/h1-bg01.png?v=1660116182',
+        'every_day_collection':"https://ap-lotita.myshopify.com/cdn/shop/files/h1-bg02.png?v=1660291621&width=600",
       }
     },
   },
