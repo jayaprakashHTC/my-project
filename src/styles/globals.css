@@ -5,3 +5,9 @@
 *{
     font-family: 'Caveat', 'Poppins', sans-serif;
 }
+
+@layer components {
+    .carousel-button button {
+        @apply bg-red-900;
+     }
+}

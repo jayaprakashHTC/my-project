@@ -14,7 +14,9 @@ const HeaderCom = () => {
                   <ul className="pt-[35px] pb-[35px]">
                     <li className='inline-block mr-[12px] text-[20px]'><Link href="/home">Home</Link></li>
                     <li className='inline-block mr-[12px] text-[20px]'><Link href="/about">About</Link></li>
-                    <li className='inline-block text-[20px]'><Link href="/contact">Contact</Link></li>
+                    <li className='inline-block mr-[12px] text-[20px]'><Link href="/contact">Contact</Link></li>
+                    <li className='inline-block mr-[12px] text-[20px]'><Link href="/vendorproducts">Vendor</Link></li>
+                    <li className='inline-block text-[20px]'><Link href="/questionpaper">Question Paper</Link></li>
                   </ul>
               </div>
            </nav>
